@@ -160,10 +160,68 @@ p {
 
 /*** Styling general ***/
 
+header, main, footer {
+    padding: calc(var(--spacing) * 4);
+}
+
 header, main {
-    background-color: var(--gray-50);
+    background-color: var(--white);
+}
+
+footer {
+    color: var(--gray-100);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+button {
+    background-color: var(--purple-600);
+    border-radius: 0.5ch;
+}
+
+/*** Styling general end ***/
+
+/*** Styling block ***/
+
+.header__button, .header__list {
+
 }
 
 .find {
     background-color: var(--gray-300);
+}
+
+.benefits {
+    background-color: var(--emerald-100);
+}
+
+.gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));;
+}
+
+.hero__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hero__slogan {
+    background-color: var(--purple-100);
+    color: var(--purple-400);
+    text-transform: uppercase;
+}
+
+.benefits {
+    padding: calc(var(--spacing) * 8);
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
 }
