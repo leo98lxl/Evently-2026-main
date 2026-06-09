@@ -94,7 +94,7 @@
 
     <!-- Header -->
     <header class="header">
-        <a class="header__icon" href="#">Evently</a>
+        <a class="evently__icon" href="#">Evently</a>
             <nav class="header__navigation">
                 <ul class="header__list">
                     <li><a class="header__list--item" href="#">Hem</a></li>
@@ -110,6 +110,7 @@
 
     <!-- Main content -->
     <main class="main">
+        
         <section class="hero">
             <p class="hero__slogan">Upptäck. Upplev. Minns.</p>
 
@@ -120,6 +121,10 @@
             <button class="hero__button--exploration" href="#">Utforska evenemang</button>
             <button class="hero__button--tips" href="#">Se helgens tips</button>
         </section>
+
+        <aside class="hero__gallery">
+            <!--insert hero gallery images here-->
+        </aside>
 
         <section class="find">
             <h3 class="find__description">Hitta rätt evenemang</h3>
@@ -145,84 +150,130 @@
                 <button class="form__button" href="#">Sök evenemang</button>
 
             </form>
-            
+
         </section>
+
+        <section class="gallery">
+            <!--gallery img descriptions-->
         Konsert
         Marknad
         Workshop
         Familj
         Sport / Hälsa
 
-        Populära evenemang
-        Se alla evenemang
+        <h2 class="gallery__description">Populära evenemang</h2>
 
-        Indie Night med Nova Sun
-        Konsert
-        24 maj
-        Pustervik, Göteborg
+        <button class="gallery__button" href="#">Se alla evenemang</button>
 
-        Vårmarknad i Slottsskogen
-        Marknad
-        25 maj
-        Slottsskogen, Göteborg
+            <article class="gallery__card">
+                <!--insert gallery img here w. description-->
+                <h4 class="card__description">Indie Night med Nova Sun</h4>
+                    <p class="card__category">Konsert</p>
+                    <p class="card__date">24 maj</p>
+                    <p class="card__location">Pustervik, Göteborg</p>
+            </article>
 
-        Keramikkurs för nybörjare
-        Workshop
-        27 maj
-        Studio Lera, Göteborg
+            <article class="gallery__card">
+                <!--insert gallery img here w. description-->
+                <h4 class="card__description">Vårmarknad i Slottsskogen</h4>
+                    <p class="card__category">Marknad</p>
+                    <p class="card__date">25 maj</p>
+                    <p class="card__location">Slottsskogen, Göteborg</p>
+            </article>
 
-        Barnteater: Den lilla sjöjungfrun
-        Familj
-        31 maj
-        Folkteatern, Göteborg
+            <article class="gallery__card">
+                <!--insert gallery img here w. description-->
+                <h4 class="card__description">Keramikkurs för nybörjare</h4>
+                    <p class="card__category">Workshop</p>
+                    <p class="card__date">27 maj</p>
+                    <p class="card__location">Studio Lera, Göteborg</p>
+            </article>
 
-        Morgonlöpning & frukost
-        Sport
-        1 juni
-        Slottsskogen, Göteborg
+            <article class="gallery__card">
+                <!--insert gallery img here w. description-->
+                <h4 class="card__description">Barnteater: Den lilla sjöjungfrun</h4>
+                    <p class="card__category">Familj</p> 
+                    <p class="card__date">31 maj</p>
+                    <p class="card__location">Folkteatern, Göteborg</p>
+            </article>
 
+            <article class="gallery__card">
+                <!--insert gallery img here w. description-->
+                <h4 class="card__description">Morgonlöpning & frukost</h4>
+                    <p class="card__category">Sport</p>
+                    <p class="card__date">1 juni</p>
+                    <p class="card__location">Slottsskogen, Göteborg</p>
+            </article>
 
-        Jazzkväll på Vasateatern
-        Konsert
-        3 juni
-        Vasateatern, Göteborg
+            <article class="gallery__card">
+                <!--insert gallery img here w. description-->
+                <h4 class="card__description">Jazzkväll på Vasateatern</h4>
+                    <p class="card__category">Konsert</p>
+                    <p class="card__date">3 juni</p>
+                    <p class="card__location">Vasateatern, Göteborg</p>
+            </article>
 
+        </section>
 
-        Gratis & prisvärt
-        Hitta massor av evenemang som är gratis eller snälla mot plånboken.
+        <section class="benefits">
 
+            <div class="benefits__group">
+                <!--insert benefits icon here-->
+                <h4 class="benefits__description">Gratis & prisvärt</h4>
+                <p>Hitta massor av evenemang som är gratis eller snälla mot plånboken.</p>
+            </div>
 
-        För alla åldrar
-        Aktiviteter för både stora och små - hitta något som passar hela familjen.
+            <div class="benefits__group">
+                <!--insert benefits icon here-->
+                <h4 class="benefits__description">För alla åldrar</h4>
+                <p>Aktiviteter för både stora och små - hitta något som passar hela familjen.</p>
+            </div>
 
-        Nära dig
-        Upptäck evenemang i ditt område och stöd lokala arrangörer.
+            <div class="benefits__group">
+                <!--insert benefits icon here-->
+                <h4 class="benefits__description">Nära dig</h4>
+                <p>Upptäck evenemang i ditt område och stöd lokala arrangörer.</p>
+            </div>
+
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-        Evently
-        Evently samlar lokala evenemang så att du enkelt kan upptäcka, planera och dela upplevelser som berikar din
-        vardag.
+    <footer class="footer">
 
+        <a class="evently__icon" href="#">Evently</a>
+        <p>Evently samlar lokala evenemang så att du enkelt kan upptäcka, planera och dela upplevelser som berikar din
+        vardag.</p>
+        <!--insert social media icons here-->
 
-        Utforska
-        Alla evenemang
-        Kategorier
-        Helgens tips
-        Populära
+        <nav class="footer__navigation">
+        
+            <ul class="footer__list">
+                <li>Utforska</li>
+                <li><a class="footer__list--item" href="#">Alla evenemang</a></li>
+                <li><a class="footer__list--item" href="#">Kategorier</a></li>
+                <li><a class="footer__list--item" href="#">Helgens tips</a></li>
+                <li><a class="footer__list--item" href="#">Populära</a></li>
+            </ul>
 
-        Om Evently
-        Om oss
-        För arrangörer
-        Vanliga frågor
-        Nyheter
+            <ul class="footer__list">
+                <li>Om Evently</li>
+                <li><a class="footer__list--item" href="#">Om oss</a></li>
+                <li><a class="footer__list--item" href="#">För arrangörer</a></li>
+                <li><a class="footer__list--item" href="#">Vanliga frågor</a></li>
+                <li><a class="footer__list--item" href="#">Nyheter</a></li>
+            </ul>
 
-        Kontakt
-        info@evently.se
-        031-123 45 67
-        Stora Badhusgatan 18
-        411 21 Göteborg
+            <ul class="footer__list">
+                <li>Kontakt</li>
+                <li><a class="footer__list--item" href="#">info@evently.se</a></li>
+                <li><a class="footer__list--item" href="#">031-123 45 67</a></li>
+                <li><a class="footer__list--item" href="#">Stora Badhusgatan 18</a></li>
+                <li><a class="footer__list--item" href="#">411 21 Göteborg</a></li>
+            </ul>
+
+        </nav>
+
     </footer>
 
 </body>
