@@ -242,7 +242,7 @@ p {
     background-color: var(--emerald-100);
 }
 
-.gallery {
+.events__gallery {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
@@ -255,6 +255,11 @@ p {
 
     border: 2px solid var(--gray-300);
     border-radius: 1.5ch;
+}
+
+.events__description {
+    display: flex;
+    justify-content: space-between;
 }
 
 .card__image {
@@ -278,7 +283,7 @@ p {
 .hero__gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: calc(var(--spacing) * 2);
     justify-content: space-around;
 }
 
