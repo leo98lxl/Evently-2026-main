@@ -33,19 +33,19 @@
                 </ul>
 
         <!--spyglass-->
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+         <a class="spyglass__icon" href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
+        </svg></a>
 
         <!--hamburger, hidden on desktop version-->
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        <a class="hamburger__icon" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <line x1="4" y1="12" x2="20" y2="12"></line>
         <line x1="4" y1="6" x2="20" y2="6"></line>
         <line x1="4" y1="18" x2="20" y2="18"></line>
-        </svg>
+        </svg></a>
     
         <button class="header__button" href="#">Skapa konto</button>
 
@@ -58,26 +58,29 @@
     <main class="main">
         
         <section class="hero">
-            <p class="hero__slogan">Upptäck. Upplev. Minns.</p>
 
-            <h1 class="hero__header">Hitta lokala evenemang du kommer älska</h1>
+            <div class="hero__description">
+                <h3 class="hero__slogan">Upptäck. Upplev. Minns.</h3>
 
-            <p class="hero__description">Från konserter och marknader till workshops och familjeaktiviteter. Upptäck vad som händer nära dig.</p>
+                <h1 class="hero__header">Hitta lokala evenemang du kommer älska</h1>
+                <p>Från konserter och marknader till workshops och familjeaktiviteter. Upptäck vad som händer nära dig.</p>
 
-            <button class="hero__button--exploration" href="#">Utforska evenemang</button>
-            <button class="hero__button--tips" href="#">Se helgens tips</button>
+                <button class="hero__button--exploration" href="#">Utforska evenemang</button>
+                <button class="hero__button--tips" href="#">Se helgens tips</button>
+            </div>
+
+            <aside class="hero__gallery">
+                <!--insert hero gallery images here-->
+                <figure>
+                    <img class="hero__image" src="https://picsum.photos/200" alt="Bild på evenemang fylld med publik">
+                    
+                    <img class="hero__image" src="https://picsum.photos/200" alt="Bild på gata med hängande lampor under nattetid">
+                    
+                    <img class="hero__image" src="https://picsum.photos/200" alt="Bild på systemkamera på ett bord">
+                </figure>
+            </aside>
+
         </section>
-
-        <aside class="hero__gallery">
-            <!--insert hero gallery images here-->
-            <figure>
-                <img class="hero__image" src="https://picsum.photos/200/300" alt="Bild på evenemang fylld med publik">
-
-                <img class="hero__image" src="https://picsum.photos/200" alt="Bild på gata med hängande lampor under nattetid">
-
-                <img class="hero__image" src="https://picsum.photos/200" alt="Bild på systemkamera på ett bord">
-            </figure>
-        </aside>
 
         <section class="find">
             <h3 class="find__description">Hitta rätt evenemang</h3>
@@ -122,72 +125,66 @@
 
             <article class="gallery__card">
                 <figure>
-                    <img class="card__image" src="https://picsum.photos/300/200" alt="Bild på evenemang fylld med publik">
+                    <img class="card__image" src="https://picsum.photos/500/300" alt="Bild på evenemang fylld med publik">
+                    <figcaption class="card__image--desc">Konsert</figcaption>
                 </figure>
-                    <p class="card__image--desc">Konsert</p>
 
                 <h4 class="card__description">Indie Night med Nova Sun</h4>
-                    <p class="card__category">Konsert</p>
                     <p class="card__date">24 maj</p>
                     <p class="card__location">Pustervik, Göteborg</p>
             </article>
 
             <article class="gallery__card">
                 <figure>
-                    <img class="card__image" src="https://picsum.photos/300/200" alt="Bild på grönt gräs vid solnedgång">
+                    <img class="card__image" src="https://picsum.photos/500/300" alt="Bild på grönt gräs vid solnedgång">
+                    <figcaption class="card__image--desc">Marknad</figcaption>
                 </figure>
-                    <p class="card__image--desc">Marknad</p>
 
                 <h4 class="card__description">Vårmarknad i Slottsskogen</h4>
-                    <p class="card__category">Marknad</p>
                     <p class="card__date">25 maj</p>
                     <p class="card__location">Slottsskogen, Göteborg</p>
             </article>
 
             <article class="gallery__card">
                 <figure>
-                    <img class="card__image" src="https://picsum.photos/300/200" alt="Bild på ljusstrimma genom cylinderformat hantverk">
+                    <img class="card__image" src="https://picsum.photos/500/300" alt="Bild på ljusstrimma genom cylinderformat hantverk">
+                    <figcaption class="card__image--desc">Workshop</figcaption>
                 </figure>
-                    <p class="card__image--desc">Workshop</p>
 
                 <h4 class="card__description">Keramikkurs för nybörjare</h4>
-                    <p class="card__category">Workshop</p>
                     <p class="card__date">27 maj</p>
                     <p class="card__location">Studio Lera, Göteborg</p>
             </article>
 
             <article class="gallery__card">
                 <figure>
-                    <img class="card__image" src="https://picsum.photos/300/200" alt="Bild på valrossar vid stenig strandkant">
+                    <img class="card__image" src="https://picsum.photos/500/300" alt="Bild på valrossar vid stenig strandkant">
+                    <figcaption class="card__image--desc">Familj</figcaption>
                 </figure>
-                    <p class="card__image--desc">Familj</p>
 
                 <h4 class="card__description">Barnteater: Den lilla sjöjungfrun</h4>
-                    <p class="card__category">Familj</p> 
                     <p class="card__date">31 maj</p>
                     <p class="card__location">Folkteatern, Göteborg</p>
             </article>
 
             <article class="gallery__card">
                 <figure>
-                    <img class="card__image" src="https://picsum.photos/300/200" alt="Bild på människa som står vid en sjö med dimma ovanför vattenytan">
+                    <img class="card__image" src="https://picsum.photos/500/300" alt="Bild på människa som står vid en sjö med dimma ovanför vattenytan">
+                    <figcaption class="card__image--desc">Sport/hälsa</figcaption>
                 </figure>
-                    <p class="card__image--desc">Sport</p>
 
                 <h4 class="card__description">Morgonlöpning & frukost</h4>
-                    <p class="card__category">Sport</p>
                     <p class="card__date">1 juni</p>
                     <p class="card__location">Slottsskogen, Göteborg</p>
             </article>
 
             <article class="gallery__card">
                 <figure>
-                    <img class="card__image" src="https://picsum.photos/300/200" alt="">
+                    <img class="card__image" src="https://picsum.photos/500/300" alt="">
+                    <figcaption class="card__image--desc">Konsert</figcaption>
                 </figure>
-                    <p class="card__image--desc">Hälsa</p>
 
                 <h4 class="card__description">Jazzkväll på Vasateatern</h4>
-                    <p class="card__category">Konsert</p>
                     <p class="card__date">3 juni</p>
                     <p class="card__location">Vasateatern, Göteborg</p>
             </article>
@@ -253,26 +250,26 @@
         vardag.</p>
           
         <!--instagram-->
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        <a class="socials" href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-        </svg>
+        </svg></a>
 
         <!--facebook-->
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        <a class="socials" href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-        </svg>
+        </svg></a>
 
         <!--x-->
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        <a class="socials" href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path
                 d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
             </path>
-        </svg>
+        </svg></a>
 
             <ul class="footer__list">
                 <li>Utforska</li>

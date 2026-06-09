@@ -42,6 +42,7 @@ h4,
 h5,
 h6 {
     font-family: var(--font-poppins);
+    font-weight: var(--fw-heading-medium);
     text-wrap: balance;
     line-height: 1.1;
 }
@@ -122,6 +123,24 @@ p {
     --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
     --font-poppins: 'Poppins', system-ui, -apple-system, sans-serif;
 
+    /* Font Sizes */
+    --fs-text-small: 0.5rem;
+    --fs-text-medium: 1rem;
+    --fs-text-large: 2rem;
+
+    --fs-heading-small: 1rem;
+    --fs-heading-medium: 2rem;
+    --fs-heading-large: 3rem;
+
+    /* Font Weights */
+    --fw-text-small: 200;
+    --fw-text-medium: 400;
+    --fw-text-large: 800;
+
+    --fw-heading-small: 400;
+    --fw-heading-medium: 600;
+    --fw-heading-large: 800;
+
     /* Brand Colors */
     --purple-100: oklch(95.6% 0.028 282);
     --purple-200: oklch(91.7% 0.049 281);
@@ -159,6 +178,20 @@ p {
 /*** Variables end ***/
 
 /*** Styling general ***/
+h1 {
+    font-weight: var(--fw-heading-large);
+    font-size: var(--fs-heading-large);
+}
+
+h2 {
+    font-weight: var(--fw-heading-medium);
+    font-size: var(--fs-heading-medium);
+}
+
+h3 {
+    font-weight: var(--fw-heading-small);
+    font-size: var(--fs-heading-small);
+}
 
 header, main, footer {
     padding: calc(var(--spacing) * 4);
@@ -174,8 +207,9 @@ footer {
 
 nav {
     display: flex;
+    gap: calc(var(--spacing) * 4);
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 button {
@@ -183,12 +217,21 @@ button {
     border-radius: 0.5ch;
 }
 
+p {
+    padding: calc(var(--spacing) * 2);  
+}
+
 /*** Styling general end ***/
 
 /*** Styling block ***/
 
-.header__button, .header__list {
+.header__button, .header__list, .hamburger__icon {
+    display: flex;
+    gap: calc(var(--spacing) * 4);
 
+    @media (max-width: 900px) {
+        display: none;
+    }
 }
 
 .find {
@@ -202,12 +245,40 @@ button {
 .gallery {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+}
+
+.gallery__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    border: 2px solid var(--gray-300);
+    border-radius: 1.5ch;
+}
+
+.card__image {
+    display: flex;
+    flex-wrap: wrap;
+    border-start-start-radius: 1.5ch;
+    border-start-end-radius: 1.5ch;
+}
+
+.hero {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    justify-content: space-around;
+}
+
+.hero__description {
+    padding: var(--spacing);
 }
 
 .hero__gallery {
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
     justify-content: space-around;
 }
 
@@ -225,3 +296,14 @@ button {
     flex-direction: column;
     justify-content: center;
 }
+
+/*** Styling block end ***/
+
+/*** Styling svg ***/
+
+.socials {
+    border: 2px solid var(--gray-50);
+    border-radius: 50%;
+}
+
+/*** Styling svg end ***/
