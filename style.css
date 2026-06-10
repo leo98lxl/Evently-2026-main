@@ -288,21 +288,6 @@ p {
     color: var(--purple-600);
 }
 
-.events__gallery {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-}
-
-.events__button {
-    color: var(--purple-600);
-}
-
-.events__description {
-    display: flex;
-    justify-content: space-between;
-}
-
 .footer__description {
     display: flex;
     flex-wrap: wrap;
@@ -310,20 +295,39 @@ p {
     justify-content: start;
 }
 
-.card__footer {
-    padding: var(--spacing);
+.events__description {
+    display: flex;
+    justify-content: space-between;
+    padding-block: var(--spacing-large);
 }
 
-.card__image {
+.events__description--button {
+    color: var(--purple-600);
+}
+
+.events__gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+}
+
+.events__image {
     display: flex;
     flex-wrap: wrap;
     border-start-start-radius: 1.5ch;
     border-start-end-radius: 1.5ch;
 }
 
-.gallery__card {
+.events__info {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--spacing);
+}
+
+.events__card {
+    display: grid;
     justify-content: space-between;
     border: 2px solid var(--gray-300);
     border-radius: 1.5ch;
@@ -353,11 +357,10 @@ p {
     border-radius: 1.5ch;
 }
 
-.hero__slogan, .card__image--desc {
+.hero__slogan, .events__info--desc {
     font-weight: var(--fw-text-large);
     text-transform: uppercase;
     padding-inline: 1ch;
-    background-color: aqua;
 }
 
 .benefits {
