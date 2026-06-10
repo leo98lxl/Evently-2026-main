@@ -310,6 +310,10 @@ p {
     justify-content: start;
 }
 
+.card__footer {
+    padding: var(--spacing);
+}
+
 .card__image {
     display: flex;
     flex-wrap: wrap;
@@ -321,16 +325,16 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
     border: 2px solid var(--gray-300);
     border-radius: 1.5ch;
 }
 
 .hero {
     display: grid;
-    gap: 1rem;
+    gap: var(--spacing-large);
     grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     justify-content: space-around;
+    padding-block: var(--spacing-large);
 }
 
 .hero__description {
@@ -341,7 +345,12 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: calc(var(--spacing) * 2);
-    justify-content: space-around;
+}
+
+.hero__image {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1.5ch;
 }
 
 .hero__slogan, .card__image--desc {
