@@ -198,6 +198,13 @@ body {
     background-color: var(--white);
 }
 
+button {
+    border-color: var(--purple-600);
+    border-radius: 0.5ch;
+    padding-inline: 3ch;
+    padding-block: 0.5ch;
+}
+
 header, main {
     background-color: var(--white);
 }
@@ -236,13 +243,6 @@ nav {
     justify-content: space-between;
 }
 
-button {
-    border-color: var(--purple-600);
-    border-radius: 0.5ch;
-    padding-inline: 3ch;
-    padding-block: 0.5ch;
-}
-
 p {
     padding: calc(var(--spacing) * 2);  
 }
@@ -256,7 +256,7 @@ p {
     width: clamp(300px, 95%, 1920px);
 }
 
-.header__list, .hamburger__icon {
+.header__list, .header__navigation button {
     display: flex;
     gap: var(--spacing-large);
 
@@ -295,6 +295,13 @@ p {
     justify-content: start;
 }
 
+.events__card {
+    display: grid;
+    justify-content: space-between;
+    border: 2px solid var(--gray-300);
+    border-radius: 1.5ch;
+}
+
 .events__description {
     display: flex;
     justify-content: space-between;
@@ -311,6 +318,10 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
 }
 
+.events__heading, .events__location {
+    padding-inline: var(--spacing-large);
+}
+
 .events__image {
     display: flex;
     flex-wrap: wrap;
@@ -324,13 +335,6 @@ p {
     flex-direction: row;
     justify-content: space-between;
     padding: var(--spacing);
-}
-
-.events__card {
-    display: grid;
-    justify-content: space-between;
-    border: 2px solid var(--gray-300);
-    border-radius: 1.5ch;
 }
 
 .hero {
