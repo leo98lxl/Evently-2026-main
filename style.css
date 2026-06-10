@@ -128,7 +128,7 @@ p {
     --fs-text-medium: 1rem;
     --fs-text-large: 2rem;
 
-    --fs-heading-small: 1rem;
+    --fs-heading-small: 1.5rem;
     --fs-heading-medium: 2rem;
     --fs-heading-large: 3rem;
 
@@ -137,8 +137,8 @@ p {
     --fw-text-medium: 400;
     --fw-text-large: 800;
 
-    --fw-heading-small: 400;
-    --fw-heading-medium: 600;
+    --fw-heading-small: 600;
+    --fw-heading-medium: 700;
     --fw-heading-large: 800;
 
     /* Brand Colors */
@@ -205,6 +205,7 @@ header, main {
 footer {
     background-color: var(--gray-950);
     color: var(--gray-100);
+    padding: var(--spacing-large);
 }
 
 form {
@@ -223,6 +224,7 @@ input, select {
 
 label {
     font-weight: calc(var(--fw-text-medium) * 1.5);
+    display: block;
 }
 
 nav {
@@ -233,8 +235,10 @@ nav {
 }
 
 button {
-    background-color: var(--purple-600);
+    border-color: var(--purple-600);
     border-radius: 0.5ch;
+    padding-inline: 3ch;
+    padding-block: 0.5ch;
 }
 
 p {
@@ -250,7 +254,7 @@ p {
     width: clamp(300px, 95%, 1920px);
 }
 
-.header__button, .header__list, .hamburger__icon {
+.header__list, .hamburger__icon {
     display: flex;
     gap: var(--spacing-large);
 
@@ -263,17 +267,48 @@ p {
     background-color: var(--gray-300);
     width: 100%;
     padding: var(--spacing-large);
-    text-align: center;
 }
 
 .benefits {
     background-color: var(--emerald-100);
 }
 
+.button__primary {
+    background-color: var(--purple-600);
+}
+
+.button__secondary {
+    background-color: var(--white);
+    color: var(--purple-600);
+}
+
 .events__gallery {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+}
+
+.events__button {
+    color: var(--purple-600);
+}
+
+.events__description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.card__image {
+    display: flex;
+    flex-wrap: wrap;
+    border-start-start-radius: 1.5ch;
+    border-start-end-radius: 1.5ch;
 }
 
 .gallery__card {
@@ -283,18 +318,6 @@ p {
 
     border: 2px solid var(--gray-300);
     border-radius: 1.5ch;
-}
-
-.events__description {
-    display: flex;
-    justify-content: space-between;
-}
-
-.card__image {
-    display: flex;
-    flex-wrap: wrap;
-    border-start-start-radius: 1.5ch;
-    border-start-end-radius: 1.5ch;
 }
 
 .hero {
@@ -315,14 +338,15 @@ p {
     justify-content: space-around;
 }
 
-.hero__slogan {
-    background-color: var(--purple-100);
-    color: var(--purple-400);
+.hero__slogan, .card__image--desc {
+    font-weight: var(--fw-text-large);
     text-transform: uppercase;
+    padding-inline: 1ch;
+    background-color: aqua;
 }
 
 .benefits {
-    padding: calc(var(--spacing) * 8);
+    padding: calc(var(--spacing-large) * 2);
     text-align: center;
     display: flex;
     gap: 1rem;
@@ -337,6 +361,7 @@ p {
 .socials {
     border: 2px solid var(--gray-50);
     border-radius: 50%;
+    padding: 1ch;
 }
 
 /*** Styling svg end ***/
