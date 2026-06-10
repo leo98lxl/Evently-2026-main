@@ -210,9 +210,9 @@ footer {
 
 form {
     display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: var(--spacing-large);
+    padding: var(--spacing-large);
 }
 
 input, select {
@@ -220,10 +220,12 @@ input, select {
     color: var(--gray-950);
     padding: calc(var(--spacing) * 2);
     border-radius: 0.5ch;
+    width: 100%;
 }
 
 label {
     font-weight: calc(var(--fw-text-medium) * 1.5);
+    padding-block: var(--spacing);
     display: block;
 }
 
@@ -267,6 +269,10 @@ p {
     background-color: var(--gray-300);
     width: 100%;
     padding: var(--spacing-large);
+}
+
+.find__description {
+    grid-column: 1 / -1;
 }
 
 .benefits {

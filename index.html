@@ -84,24 +84,28 @@
         </section>
 
         <section class="find">
-            <h3 class="find__description">Hitta rätt evenemang</h3>
-
+            
             <form class="find__form" action="#" method="get">
+            
+                <h3 class="find__description">Hitta rätt evenemang</h3>
 
                 <div class="form__group">
                     <label for="keyword">Sökord</label>
-                    <input type="text" id="keyword" name="keyword" placeholder="Sök på t.ex. konsert, yoga..." required>
+                    <input type="text" id="keyword" name="keyword" placeholder="Sök på t.ex. konsert, yoga..." required />
                 </div>
 
                 <div class="form__group">
                     <label for="categories">Kategori</label>
                     <select name="categories" id="categories" required>
                         <option value="all" selected>Alla kategorier</option>
+                        <option value="concert">Konsert</option>
+                        <option value="yoga">Yoga</option>
+                    </select>
                 </div>
 
                 <div class="form__group">
                     <label for="calendar">Datum</label>
-                    <input type="date" id="calendar" name="calendar" required>
+                    <input type="date" id="calendar" name="calendar" required />
                 </div>
 
                 <button class="button__primary" href="#">Sök evenemang</button>
@@ -248,7 +252,7 @@
         <nav class="footer__navigation">
 
             <div class="footer__description">
-                
+
                 <a class="evently__icon" href="#"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true">
                 <path
