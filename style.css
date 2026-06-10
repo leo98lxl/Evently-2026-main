@@ -173,6 +173,7 @@ p {
 
     /* Spacing */
     --spacing: 0.25rem;
+    --spacing-large: 1rem;
 }
 
 /*** Variables end ***/
@@ -193,8 +194,8 @@ h3 {
     font-size: var(--fs-heading-small);
 }
 
-header, main, footer {
-    padding: calc(var(--spacing) * 4);
+body {
+    background-color: var(--white);
 }
 
 header, main {
@@ -202,12 +203,31 @@ header, main {
 }
 
 footer {
+    background-color: var(--gray-950);
     color: var(--gray-100);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: var(--spacing-large);
+}
+
+input, select {
+    background-color: var(--white);
+    color: var(--gray-950);
+    padding: calc(var(--spacing) * 2);
+    border-radius: 0.5ch;
+}
+
+label {
+    font-weight: calc(var(--fw-text-medium) * 1.5);
 }
 
 nav {
     display: flex;
-    gap: calc(var(--spacing) * 4);
+    gap: var(--spacing-large);
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -225,9 +245,14 @@ p {
 
 /*** Styling block ***/
 
+.hero, .events {
+    margin: 0 auto;
+    width: clamp(300px, 95%, 1920px);
+}
+
 .header__button, .header__list, .hamburger__icon {
     display: flex;
-    gap: calc(var(--spacing) * 4);
+    gap: var(--spacing-large);
 
     @media (max-width: 900px) {
         display: none;
@@ -236,6 +261,9 @@ p {
 
 .find {
     background-color: var(--gray-300);
+    width: 100%;
+    padding: var(--spacing-large);
+    text-align: center;
 }
 
 .benefits {
