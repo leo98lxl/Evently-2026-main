@@ -199,6 +199,7 @@ body {
 }
 
 button {
+    display: block;
     border-color: var(--purple-600);
     border-radius: 0.5ch;
     padding-inline: 3ch;
@@ -241,6 +242,13 @@ nav {
     gap: var(--spacing-large);
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: var(--spacing);
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-large);
+    }
 }
 
 p {
@@ -251,32 +259,14 @@ p {
 
 /*** Styling block ***/
 
-.hero, .events {
-    margin: 0 auto;
-    width: clamp(300px, 95%, 1920px);
-}
-
-.header__list, .header__navigation button {
-    display: flex;
-    gap: var(--spacing-large);
-
-    @media (max-width: 900px) {
-        display: none;
-    }
-}
-
-.find {
-    background-color: var(--gray-300);
-    width: 100%;
-    padding: var(--spacing-large);
-}
-
-.find__description {
-    grid-column: 1 / -1;
-}
-
 .benefits {
     background-color: var(--emerald-100);
+    padding: calc(var(--spacing-large) * 2);
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .button__primary {
@@ -286,13 +276,6 @@ p {
 .button__secondary {
     background-color: var(--white);
     color: var(--purple-600);
-}
-
-.footer__description {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: start;
 }
 
 .events__card {
@@ -337,6 +320,47 @@ p {
     padding: var(--spacing);
 }
 
+.find {
+    background-color: var(--gray-300);
+    width: 100%;
+    padding: var(--spacing-large);
+}
+
+.find__description {
+    grid-column: 1 / -1;
+}
+
+.footer__description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.hamburger__icon {
+    display: inline-block;
+    padding: var(--spacing-large);
+
+    @media (min-width: 900px) {
+        display: none;
+    }
+}
+
+.header__list, .header__navigation button {
+    display: flex;
+    gap: var(--spacing-large);
+
+    @media (max-width: 900px) {
+        display: none;
+    }
+}
+
+.hero, .events {
+    margin: 0 auto;
+    width: clamp(300px, 95%, 1920px);
+    padding-block: var(--spacing-large);
+}
+
 .hero {
     display: grid;
     gap: var(--spacing-large);
@@ -365,15 +389,6 @@ p {
     font-weight: var(--fw-text-large);
     text-transform: uppercase;
     padding-inline: 1ch;
-}
-
-.benefits {
-    padding: calc(var(--spacing-large) * 2);
-    text-align: center;
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    justify-content: center;
 }
 
 /*** Styling block end ***/
