@@ -183,6 +183,12 @@ p {
 
 /*** Variables end ***/
 
+/*** Accessibility ***/
+
+*:focus-visible {
+    outline: 2px solid var(--purple-600);   
+}
+
 /*** Styling general ***/
 
 body {
@@ -202,6 +208,8 @@ header, main {
 }
 
 footer {
+    display: flex;
+    flex-wrap: wrap;
     background-color: var(--gray-950);
     color: var(--gray-100);
     padding: var(--spacing-large);
@@ -296,7 +304,7 @@ p {
 .content {
     margin: 0 auto; 
     padding-block: var(--spacing-large);
-    width: clamp(300px, 95%, 1920px);
+    width: clamp(300px, 95%, 2000px);
 }
 
 .events__card {
@@ -314,6 +322,10 @@ p {
 
 .events__description--button {
     color: var(--purple-600);
+
+    &:hover, :focus-visible {
+        cursor: pointer;
+    }
 }
 
 .events__gallery {
@@ -363,11 +375,11 @@ p {
     align-content: space-around;
 }
 
-.footer__description {
+.footer__top, .footer__bottom {
     display: flex;
     flex-wrap: wrap;
     gap: var(--spacing-large);
-    justify-content: start;
+    justify-items: start;
 }
 
 .hamburger__icon {
@@ -443,16 +455,18 @@ p {
 
 /*** Styling svg ***/
 
-.benefits__icon {
-    background-color: var(--emerald-800);
+.benefits__icon, .socials {
+    display: inline-block;
     border-radius: 50%;
     padding: 1ch;
 }
 
+.benefits__icon {
+    background-color: var(--emerald-800);
+}
+
 .socials {
-    border: 2px solid var(--gray-50);
-    border-radius: 50%;
-    padding: 1ch;
+    outline: 2px solid var(--gray-50);
 }
 
 /*** Styling svg end ***/
