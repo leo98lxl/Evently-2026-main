@@ -141,11 +141,6 @@ p {
     --fw-heading-medium: 700;
     --fw-heading-large: 800;
 
-    /* Line Heights */
-    --lh-small: 0.5;
-    --lh-medium: 1;
-    --lh-large: 2;
-
     /* Brand Colors */
     --purple-100: oklch(95.6% 0.028 282);
     --purple-200: oklch(91.7% 0.049 281);
@@ -189,6 +184,8 @@ p {
     outline: 2px solid var(--purple-600);   
 }
 
+/*** Accessibility end ***/
+
 /*** Styling general ***/
 
 body {
@@ -196,7 +193,7 @@ body {
 }
 
 button {
-    display: block;
+    display: inline-block;
     border-color: var(--purple-600);
     border-radius: 0.5ch;
     padding-inline: 3ch;
